@@ -1,15 +1,12 @@
-import math
+voltaje1 = float(input("ingrese el primer voltaje: "))
+voltaje2 = float(input("ingrese el segundo voltaje: "))
+voltaje3 = float(input("ingrese el tercer voltaje: "))
 
+promedio = (voltaje1 + voltaje2 + voltaje3) / 3
 
-medidasTriangulo = float(input("ingrese la medida de su cuadro equilatero: "))
-
-lado = medidasTriangulo * medidasTriangulo
-r = 1.73
-area = lado * r / 4
-
-total = area
-
-if total < 1000:
-    print(f"El area de su triangulo es: {total}")
+if promedio > 220:
+    print(f"PELIGRO")
+elif promedio >= 115:
+    print(F"Alto voltaje")
 else:
-    print(f"  Datos no validos  ")
+    print(f"Voltaje correcto")
