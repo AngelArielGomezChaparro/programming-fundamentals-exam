@@ -1,11 +1,15 @@
-voltaje1 = float(input("ingrese porfavor el primer voltaje: "))
-voltaje2 = float(input("ingrese porfavor el segundo voltaje: "))
-voltaje3 = float(input("ingrese porfavor el tercero voltaje: "))
-voltaje4 = float(input("ingrese porfavor el cuarto voltaje: "))
-voltaje5 = float(input("ingrese porfavor el quinto voltaje: "))
-voltajeTotal = (voltaje1 + voltaje2 + voltaje3 + voltaje4 + voltaje5) /5
-  
-if voltajeTotal < 220:
-        print(f"Voltaje correcto ({voltajeTotal})")
+import math
+
+
+medidasTriangulo = float(input("ingrese la medida de su cuadro equilatero: "))
+
+lado = medidasTriangulo * medidasTriangulo
+r = 1.73
+area = lado * r / 4
+
+total = area
+
+if total < 1000:
+    print(f"El area de su triangulo es: {total}")
 else:
-        print(F"Alto voltaje ({voltajeTotal}) ")
+    print(f"  Datos no validos  ")
